@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/movie_pic"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:background="#111111"
+        android:contentDescription="电影封面" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/movie_pic"
+        android:maxLines="1"
+        android:text="肖申克的救赎"
+        android:textColor="#2C2C2C"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/movie_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/movie_pic"
+        android:maxLines="1"
+        android:text="类型：犯罪 悬疑"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/movie_casts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_type"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/movie_pic"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="主演：蒂姆·罗宾斯/摩根·弗里曼/鲍勃·冈顿/弗兰克·德拉邦特"
+        android:textSize="14sp" />
+</RelativeLayout>
